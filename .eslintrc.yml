@@ -7,10 +7,13 @@ env:
 reportUnusedDisableDirectives: true
 plugins:
   - flowtype
+  - graphql
 
 rules:
   # `eslint-plugin-flowtype` rule list based on `v4.3.x`
   # https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype
+
+  graphql/annotate-internal-functions: warn
 
   flowtype/array-style-complex-type: [error, verbose]
   flowtype/array-style-simple-type: [error, verbose]
